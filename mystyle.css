@@ -1,4 +1,4 @@
-/* General Body Styles */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8ebe7;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Navigation Bar Styles */
+
 nav {
     text-align: center;
     margin: 20px 0;
@@ -20,7 +20,7 @@ nav a {
     font-weight: bold;
 }
 
-/* Header Styles */
+
 header {
     background-color: #d4a5a5;
     color: #fff;
@@ -28,19 +28,19 @@ header {
     text-align: center;
 }
 
-/* Section Styles */
+
 section {
     padding: 20px;
     text-align: center;
 }
 
-/* Collection List Styles */
+
 ul {
     list-style-type: none;
     padding: 0;
 }
 
-/* Footer Styles */
+
 footer {
     background-color: #d4a5a5;
     color: #fff;
