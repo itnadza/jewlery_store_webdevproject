@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8ebe7;
+    background-color: #fff;
     color: #333;
     margin: 0;
     padding: 0;
@@ -27,12 +27,35 @@ header {
     padding: 20px;
     text-align: center;
 }
+h1 {
+   
+    font-size: 2.5em;
+    font-weight: bold;
+}
+h2 {
+  
+    font-size: 2em;
+    font-weight: semi-bold;
+}
+h3 {
+   
+    font-size: 1.5em;
+    font-weight: normal;
+}
+img {
+ 
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
 
 
 section {
     padding: 20px;
     text-align: center;
 }
+
 
 
 ul {
@@ -46,4 +69,22 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+
+.btn-custom {
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-custom:hover {
+    transform: scale(1.05); /* Make button slightly larger */
+}
+.card {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05); /* Make card slightly larger on hover */
+}
+.carousel-item img {
+    width: 45%; /* Set carousel images to be smaller */
+    margin: auto; /* Center the images */
 }

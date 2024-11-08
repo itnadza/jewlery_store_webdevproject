@@ -1,30 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Aurorix Jewelry Store</title>
     <link rel="stylesheet" href="mystyle.css">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about_us.html">About us</a>
-        <a href="ourcollection.html">Our collection</a>
-        <a href="contact_us.html">Contact us</a>
-    </nav>
-  
-    <header>
-        <h1>About Aurorix Jewelry Store</h1>
-    </header>
+<!-- Navigation Bar -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about_us.html">About us</a>
+    <a href="ourcollection.html">Our collection</a>
+    <a href="contact_us.html">Contact us</a>
+</nav>
 
-    <section>
-        <h2>Welcome to Aurorix Jewelry</h2>
-        <p>Every piece is crafted with love, destined to become a cherished part of your journey.</p>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 Aurorix Jewelry Store. All Rights Reserved.</p>
-    </footer>
+<!-- Header Section -->
+<header class="text-center my-4">
+    <h1>About Aurorix Jewelry Store</h1>
+</header>
+
+<!-- Main Content Section -->
+<section class="container">
+    <h2 class="text-center">Welcome to Aurorix Jewelry</h2>
+    <p class="text-center">Every piece is crafted with love, destined to become a cherished part of your journey.</p>
+    <p class="text-center">Founded in 1999 with a passion for timeless beauty and a commitment to quality, Aurorix Jewelry is dedicated to creating exquisite pieces that resonate with your unique style.Each of our pieces is meticulously crafted by skilled artisans who emphasize precision and attention to detail. We source only the finest materials, including ethically sourced gemstones and high-quality metals, ensuring that every item meets our high standards of excellence. Our designs are not only stunning but also durable, allowing you to enjoy your jewelry for years to come.</p>
+    <h2 class="text-center">Our Mission</h2>
+    <p class="text-center">  We believe that every piece we create tells a story, celebrating life’s special moments and cherished memories. Whether it’s a wedding, anniversary, or simply a gift for yourself, our jewelry is designed to capture the essence of those significant occasions.   </p>
+    <h2 class="text-center">Our Commitment to Sustainability</h2>
+    <p class="text-center">At Aurorix Jewelry, we are committed to sustainability and ethical practices. We understand the importance of protecting our environment and ensuring that our materials are responsibly sourced. By choosing Aurorix, you are not only acquiring beautiful jewelry but also supporting a brand that values integrity and sustainability.</p>
+    <!-- Simple Image Carousel -->
+    <div id="carouselExample" class="carousel slide my-4" data-bs-ride="false"> 
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/one.jpg" class="d-block" alt="Jewelry 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/two.jpg" class="d-block" alt="Jewelry 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/three.jpg" class="d-block" alt="Jewelry 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/four.jpg" class="d-block" alt="Jewelry 4">
+            </div>
+            <div class="carousel-item">
+                <img src="images/five.jpg" class="d-block" alt="Jewelry 5">
+            </div>
+            <div class="carousel-item">
+                <img src="images/six.jpg" class="d-block" alt="Jewelry 6">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+    <!-- Jewelry Cards Section -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card border-info mb-3" style="max-width: 18rem;">
+                <img src="uno.jpg" class="card-img-top" alt="uno">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Necklace</h5>
+                    <p class="card-text">A beautiful necklace that adds elegance to any outfit.</p>
+                    <button class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#jewelryModal">View Details</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-info mb-3" style="max-width: 18rem;">
+                <img src="images/jewelry5.jpg" class="card-img-top" alt="Jewelry 5">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Ring</h5>
+                    <p class="card-text">A classic ring that symbolizes everlasting love.</p>
+                    <button class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#jewelryModal">View Details</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-info mb-3" style="max-width: 18rem;">
+                <img src="images/jewelry6.jpg" class="card-img-top" alt="Jewelry 6">
+                <div class="card-body">
+                    <h5 class="card-title">Stylish Bracelet</h5>
+                    <p class="card-text">A stylish bracelet that complements your fashion.</p>
+                    <button class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#jewelryModal">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Jewelry Details -->
+    <div class="modal fade" id="jewelryModal" tabindex="-1" aria-labelledby="jewelryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="jewelryModalLabel">Jewelry Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Interested? Go to  <a href="ourcollection.html">Our collection</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<h3 class="text-center">Sign up for daily updates! </h3>
+<p class="text-center">Stay updated with our latest products and exclusive offers! Sign up for our daily newsletter and never miss out on new arrivals and special promotions.</p>
+<form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+    <label>
+        <input type="checkbox" name="subscribe" value="yes" required> I agree to receive daily updates and promotional emails
+    </label>
+
+    <input type="submit" value="Sign Up"><br>
+    
+</form>
+<a href ="mailto:amela.vatres@stu.ibu.edu.ba" target="_blank">Email Us For a Personilized Newsletter!</a>
+</section>
+
+<!-- Footer Section -->
+<footer class="text-center mt-4">
+    <p>2024 Aurorix Jewelry Store | Course: Web Development | Nadža Hasanović</p>
+</footer>
+
+
+
 
 </body>
 </html>
