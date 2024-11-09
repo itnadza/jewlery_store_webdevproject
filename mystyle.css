@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: #f6d9e0;
     color: #333;
     margin: 0;
     padding: 0;
@@ -49,6 +49,76 @@ img {
     margin: 10px 0;
 }
 
+.index {
+    background-image: url('images/index.jpg'); 
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+.contactus{
+    background-image: url('images/contact.jpg'); 
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+.image {
+    background-image: url('images/image.jpg'); 
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.aboutus {
+    background-image: url('images/aboutus.jpg'); 
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.category-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.card {
+    border: none;
+    transition: transform 0.2s;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.img-fluid {
+    max-width: 250px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
 
 
 section {
@@ -61,6 +131,29 @@ section {
 ul {
     list-style-type: none;
     padding: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 20px auto; 
+}
+
+label {
+    margin-bottom: 10px; 
+}
+
+input[type="email"],
+input[type="submit"] {
+    margin-bottom: 15px; 
+    width: 100%; 
+    max-width: 300px; 
+}
+
+a {
+    display: block; 
+    text-align: center; 
+    margin-top: 20px; 
 }
 
 
@@ -76,15 +169,20 @@ footer {
     transition: background-color 0.3s, transform 0.3s;
 }
 .btn-custom:hover {
-    transform: scale(1.05); /* Make button slightly larger */
+    transform: scale(1.05);
 }
 .card {
     transition: transform 0.2s;
 }
 .card:hover {
-    transform: scale(1.05); /* Make card slightly larger on hover */
+    transform: scale(1.05); 
 }
 .carousel-item img {
-    width: 45%; /* Set carousel images to be smaller */
-    margin: auto; /* Center the images */
+    width: 45%; 
+    margin: auto; 
 }
+.carousel-img {
+    width: 50%; 
+    height: auto; 
+}
+
