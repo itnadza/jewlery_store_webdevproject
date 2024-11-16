@@ -106,18 +106,14 @@ img {
     font-size: 1.5rem;
     margin-top: 20px;
 }
-.card {
-    border: none;
-    transition: transform 0.2s;
-    cursor: pointer; /* Pointer cursor on hover */
-}
+
 .card:hover {
     transform: scale(1.05);
 }
 
 .img-fluid {
-    max-width: 250px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; 
+    height: 250; 
 }
 
 
@@ -156,6 +152,10 @@ a {
     margin-top: 20px; 
 }
 
+#dropdownButton{
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
 
 footer {
     background-color: #d4a5a5;
@@ -186,3 +186,4 @@ footer {
     height: auto; 
 }
 
+    
