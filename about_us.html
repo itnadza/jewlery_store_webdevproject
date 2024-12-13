@@ -44,25 +44,25 @@
     <h2 class="text-center">Our Commitment to Sustainability</h2>
     <p class="text-center">At Aurorix Jewelry, we are committed to sustainability and ethical practices. We understand the importance of protecting our environment and ensuring that our materials are responsibly sourced. By choosing Aurorix, you are not only acquiring beautiful jewelry but also supporting a brand that values integrity and sustainability.</p>
 
-    <div id="carouselExample" class="carousel slide my-4" data-bs-ride="false"> 
+    <div id="carouselExample" class="carousel slide my-4" data-bs-ride="false">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/one.jpg" class="d-block" alt="Jewelry 1">
+                <img src="images/one.jpg" class="d-block thumbnail" alt="Jewelry 1" data-full="images/one.jpg">
             </div>
             <div class="carousel-item">
-                <img src="images/two.jpg" class="d-block" alt="Jewelry 2">
+                <img src="images/two.jpg" class="d-block thumbnail" alt="Jewelry 2" data-full="images/two.jpg">
             </div>
             <div class="carousel-item">
-                <img src="images/three.jpg" class="d-block" alt="Jewelry 3">
+                <img src="images/three.jpg" class="d-block thumbnail" alt="Jewelry 3" data-full="images/three.jpg">
             </div>
             <div class="carousel-item">
-                <img src="images/four.jpg" class="d-block" alt="Jewelry 4">
+                <img src="images/four.jpg" class="d-block thumbnail" alt="Jewelry 4" data-full="images/four.jpg">
             </div>
             <div class="carousel-item">
-                <img src="images/five.jpg" class="d-block" alt="Jewelry 5">
+                <img src="images/five.jpg" class="d-block thumbnail" alt="Jewelry 5" data-full="images/five.jpg">
             </div>
             <div class="carousel-item">
-                <img src="images/six.jpg" class="d-block" alt="Jewelry 6">
+                <img src="images/six.jpg" class="d-block thumbnail" alt="Jewelry 6" data-full="images/six.jpg">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -74,6 +74,18 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    
+    
+   <!-- Modal -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <button id="prevImage" class="modal-nav prev">&lt;</button>
+    <img class="modal-content" id="modalImage" alt="">
+    <button id="nextImage" class="modal-nav next">&gt;</button>
+    <div id="caption"></div>
+</div>
+
+    
     
 
    
@@ -131,6 +143,8 @@
 
 
 
+
+
 <h3 class="text-center">Sign up for daily updates! </h3>
 <p class="text-center">Stay updated with our latest products and exclusive offers! Sign up for our daily newsletter and never miss out on new arrivals and special promotions.</p>
 <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
@@ -164,3 +178,4 @@
     <p>2024 Aurorix Jewelry Store | Course: Web Development | Nadža Hasanović</p>
 </footer> </body>
 </html>
+<script src="myjs.js" defer></script>

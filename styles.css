@@ -30,4 +30,48 @@ body footer {
   color: #fff;
   text-align: center;
   padding: 10px;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+#faq {
+  margin: 2rem 0;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-toggle {
+  width: 100%;
+  background: #f5f5f5;
+  color: #333;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-toggle:hover {
+  background-color: #eaeaea;
+}
+
+.faq-content {
+  display: none; /* Hidden by default */
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  margin-top: -1px;
+}
+
+.faq-content p {
+  margin: 0;
+}
+
+
+/*# sourceMappingURL=styles.css.map */
