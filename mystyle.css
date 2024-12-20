@@ -100,7 +100,184 @@ body {
   }
 
 
-  
+ /* General FAQ section styling */
+#faq {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* FAQ item spacing */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.faq-toggle {
+    background-color: #f49d56; /* Gold color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.faq-toggle:hover {
+    background-color: #fee39e; /* Slightly darker gold on hover */
+}
+
+/* FAQ content styling */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 10px;
+}
+
+.faq-content p {
+    font-weight: bold; /* Make the answers stand out */
+    margin: 10px 0;
+    color: #6d4c1b; /* Darker goldish-brown for contrast */
+}
+
+
+/* Accordion */ 
+#product-categories {
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+#product-categories h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+
+.accordion-toggle {
+    background-color: #ed9090; 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-toggle:hover {
+    background-color: #eac2ce;
+}
+
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.accordion-content p {
+    margin: 10px 0;
+    color: #6d4c1b; 
+}
+
+
+
+/* NEWSLETTER SIGNUP*/
+#newsletter-signup {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ecca04;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #d4af37;
+    outline: none;
+}
+
+#password-strength {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+#password-strength span {
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.button2 {
+    background-color: #d4af37;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4c4541;
+}
+
+
+
 
 
 nav {

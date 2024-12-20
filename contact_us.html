@@ -101,6 +101,45 @@
             </div>
         </div>
     </section>
+
+
+    <section id="newsletter-signup">
+        <h2>Sign Up for Our Newsletter</h2>
+        <form id="signup-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+                <small class="error" id="name-error"></small>
+            </div>
+            
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                <small class="error" id="email-error"></small>
+            </div>
+            
+            <!-- Date of Birth Field -->
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required />
+                <small class="error" id="dob-error"></small>
+            </div>
+            
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required />
+                <div id="password-strength">Strength: <span>Weak</span></div>
+                <small class="error" id="password-error"></small>
+            </div>
+            
+            <!-- Submit Button -->
+            <button id= button2 type="submit">Sign Up</button>
+        </form>
+    </section>
+    
     
 
 
@@ -199,7 +238,7 @@
     <footer>
         <p>2024 Aurorix Jewelry Store. All Rights Reserved.</p>
     </footer>
-    <script src="myjs.js" defer></script>
+    <script src="myjs.js" ></script>
 
 
 </body>

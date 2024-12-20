@@ -72,25 +72,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //FAQ
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const faqToggles = document.querySelectorAll(".faq-toggle");
 
     faqToggles.forEach(toggle => {
-        toggle.addEventListener("click", function () {
-            const faqContent = this.nextElementSibling;
+        toggle.addEventListener("click", () => {
+            const content = toggle.nextElementSibling;
 
-            
-            if (faqContent.style.display === "block") {
-                faqContent.style.display = "none";
+            // Toggle the "active" class for the button
+            toggle.classList.toggle("active");
+
+            // Expand or collapse the content
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
             } else {
-                faqContent.style.display = "block";
+                content.style.maxHeight = content.scrollHeight + "px";
             }
-
-           
-            this.classList.toggle("active");
         });
     });
 });
+
+// accordion products 
+document.addEventListener("DOMContentLoaded", () => {
+    const accordionToggles = document.querySelectorAll(".accordion-toggle");
+
+    accordionToggles.forEach(toggle => {
+        toggle.addEventListener("click", () => {
+            // Toggle the "active" class for the button
+            toggle.classList.toggle("active");
+
+            // Toggle the corresponding content
+            const content = toggle.nextElementSibling;
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null; // Collapse content
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px"; // Expand content
+            }
+        });
+    });
+});
+
+
 
 //Theme switch
 
@@ -115,6 +138,82 @@ toggleButton.addEventListener('click', () => {
 });
 
 
+  // NEWSLETTER SIGNUP
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("signup-form");
 
+    // Password Strength Indicator
+    const passwordInput = document.getElementById("password");
+    const passwordStrength = document.getElementById("password-strength").querySelector("span");
 
+    passwordInput.addEventListener("input", () => {
+        const password = passwordInput.value;
+        let strength = "Weak";
 
+        if (password.length >= 8 && /[A-Z]/.test(password) && /[0-9]/.test(password) && /[\W_]/.test(password)) {
+            strength = "Strong";
+            passwordStrength.style.color = "green";
+        } else if (password.length >= 6 && (/[A-Z]/.test(password) || /[0-9]/.test(password))) {
+            strength = "Medium";
+            passwordStrength.style.color = "orange";
+        } else {
+            passwordStrength.style.color = "red";
+        }
+
+        passwordStrength.textContent = strength;
+    });
+
+    // Form Validation
+    form.addEventListener("submit", (event) => {
+        let isValid = true;
+
+        // Name Validation
+        const nameInput = document.getElementById("name");
+        const nameError = document.getElementById("name-error");
+        if (!nameInput.value.trim()) {
+            nameError.textContent = "Name is required.";
+            nameError.style.display = "block";
+            isValid = false;
+        } else {
+            nameError.style.display = "none";
+        }
+
+        // Email Validation
+        const emailInput = document.getElementById("email");
+        const emailError = document.getElementById("email-error");
+        const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+        if (!emailPattern.test(emailInput.value)) {
+            emailError.textContent = "Enter a valid email address.";
+            emailError.style.display = "block";
+            isValid = false;
+        } else {
+            emailError.style.display = "none";
+        }
+
+        // Date Validation
+        const dobInput = document.getElementById("dob");
+        const dobError = document.getElementById("dob-error");
+        if (!dobInput.value) {
+            dobError.textContent = "Date of birth is required.";
+            dobError.style.display = "block";
+            isValid = false;
+        } else {
+            dobError.style.display = "none";
+        }
+
+        // Password Validation
+        const passwordError = document.getElementById("password-error");
+        if (passwordInput.value.length < 8) {
+            passwordError.textContent = "Password must be at least 8 characters long.";
+            passwordError.style.display = "block";
+            isValid = false;
+        } else {
+            passwordError.style.display = "none";
+        }
+
+        // Prevent form submission if invalid
+        if (!isValid) {
+            event.preventDefault();
+        }
+    });
+});
