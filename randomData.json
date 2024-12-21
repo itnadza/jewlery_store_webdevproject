@@ -1,0 +1,7 @@
+{
+    "entities": [
+        { "id": 1, "name": "Nadža Hasanovć", "email": "nadza@gmail.com" },
+        { "id": 2, "name": "Angelina Jolie", "email": "angelina@gmail.com" },
+        { "id": 3, "name": "Vin Diesel", "email": "vin@gmail.com" }
+    ]
+}

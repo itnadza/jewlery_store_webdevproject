@@ -1,3 +1,5 @@
+
+/*Interactive Gallery*/
 .thumbnail {
     cursor: pointer;
     transition: transform 0.2s;
@@ -77,7 +79,7 @@
     font-size: 18px;
 }
 
-
+/* Dark mode*/
 body {
     background-color: white;
     color: black;
@@ -109,14 +111,14 @@ body {
     margin: 0 auto;
 }
 
-/* FAQ item spacing */
+
 .faq-item {
     margin-bottom: 15px;
 }
 
-/* Button styling */
+
 .faq-toggle {
-    background-color: #f49d56; /* Gold color */
+    background-color: #f49d56; 
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -129,10 +131,10 @@ body {
 }
 
 .faq-toggle:hover {
-    background-color: #fee39e; /* Slightly darker gold on hover */
+    background-color: #fee39e; 
 }
 
-/* FAQ content styling */
+
 .faq-content {
     max-height: 0;
     overflow: hidden;
@@ -141,9 +143,9 @@ body {
 }
 
 .faq-content p {
-    font-weight: bold; /* Make the answers stand out */
+    font-weight: bold; 
     margin: 10px 0;
-    color: #6d4c1b; /* Darker goldish-brown for contrast */
+    color: #6d4c1b; 
 }
 
 
@@ -278,8 +280,212 @@ button:hover {
 
 
 
+/* Weather API*/
+
+h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+#weather-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #e5e1e1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+#weather-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#weather-form input {
+    margin-bottom: 10px;
+}
+#weather-result {
+    margin-top: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.dropdown {
+    margin-top: 20px;
+}
 
 
+.toast {
+    background-color: rgba(0, 0, 0, 0.8) !important; 
+    color: white !important; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px; 
+    font-size: 14px; 
+}
+
+
+.toast-success {
+    background-color: rgba(40, 167, 69, 0.8) !important;
+}
+
+
+.toast-error {
+    background-color: rgba(220, 53, 69, 0.8) !important;
+}
+
+
+.toast-info {
+    background-color: rgba(23, 162, 184, 0.8) !important;
+}
+
+
+.toast-warning {
+    background-color: rgba(255, 193, 7, 0.8) !important;
+}
+
+
+.toast-top-right {
+    top: 20px;
+    right: 20px;
+}
+
+/* Comments*/
+
+
+.comment {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.username {
+    color: #cb1d8f;
+    font-weight: bold;
+}
+.date {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+/* Ajax form messages */
+.message-container {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+
+.success-message {
+    background-color: #28a745; 
+    color: white;
+    border: 1px solid #218838;
+}
+
+
+.error-message {
+    background-color: #dc3545; 
+    color: white;
+    border: 1px solid #c82333;
+}
+
+
+.message-container.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+/* View More*/
+
+#viewMoreBtn {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#moreText {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+#moreText p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Managing Entities*/
+
+table {
+    border-collapse: collapse; 
+    width: 80%;                 
+    margin: 0 auto;             
+    background-color: white;   
+    border: 1px solid #ddd;    
+}
+
+th, td {
+    padding: 10px;              
+    text-align: center;         
+    border: 1px solid #ddd;   
+}
+
+th {
+    background-color: #f2f2f2; 
+}
+
+h4 {
+    text-align: center; 
+
+}
+
+
+.action-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background-color: #52e3da;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #e16c64;
+    color: white;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+}
+
+
+/*FROM ASSIGNMENT 1 STYLING*/
 nav {
     text-align: center;
     margin: 20px 0;
