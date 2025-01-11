@@ -1,5 +1,5 @@
 
-//Interactive Gallery
+//INTERACTIVE GALLERY
 
 document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("imageModal");
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Accordion products 
+// ACCORDION PRODUCTS
 document.addEventListener("DOMContentLoaded", () => {
     const accordionToggles = document.querySelectorAll(".accordion-toggle");
 
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-//Theme switch
+//DARK MODE
 
 const toggleButton = document.getElementById('dark-mode-toggle');
 const body = document.body;
@@ -142,7 +142,7 @@ toggleButton.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("signup-form");
 
-    // Password Strength 
+    
     const passwordInput = document.getElementById("password");
     const passwordStrength = document.getElementById("password-strength").querySelector("span");
 
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
         passwordStrength.textContent = strength;
     });
 
-    // Form Validation
+    
     form.addEventListener("submit", (event) => {
         let isValid = true;
 
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
             dobError.style.display = "none";
         }
 
-        // Password Validation
+        
         const passwordError = document.getElementById("password-error");
         if (passwordInput.value.length < 8) {
             passwordError.textContent = "Password must be at least 8 characters long.";
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //WEATHER API 
 document.addEventListener("DOMContentLoaded", () => {
-    // Toastr configuration
+    
     toastr.options = {
         "closeButton": true,
         "progressBar": true,
@@ -277,23 +277,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-//Form with AJAX 
+//FORM WITH AJAX
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("signup-form");
     const successMessage = document.getElementById("success-message");
 
-    // Listen for form submission
+    
     form.addEventListener("submit", async (event) => {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); 
 
-        // Get form values
+        
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const dob = document.getElementById("dob").value.trim();
         const password = document.getElementById("password").value.trim();
 
-        // Create an object to store form data
+        
         const formData = {
             name,
             email,
@@ -301,29 +301,29 @@ document.addEventListener("DOMContentLoaded", () => {
             password
         };
 
-        // Simulate AJAX request (e.g., saving the data to a server)
+    
         try {
             const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
-                method: 'POST',  // Using POST to simulate form submission
+                method: 'POST',  
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(formData)  // Convert form data to JSON
-            });
+                body: JSON.stringify(formData)  
+            })
 
             if (response.ok) {
-                // Show success message
+                
                 successMessage.style.display = "block";
 
-                // Optionally, hide the success message after a few seconds
+                
                 setTimeout(() => {
                     successMessage.style.display = "none";
-                }, 5000); // Hide after 5 seconds
+                }, 5000); 
 
-                // Clear the form after submission
+            
                 form.reset();
             } else {
-                // Handle server error or failed submission
+                
                 throw new Error('Failed to submit data.');
             }
         } catch (error) {
@@ -334,50 +334,47 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-//View More 
-// Wait until the DOM is fully loaded
+//VIEW MORE
+
 document.addEventListener("DOMContentLoaded", function () {
     const viewMoreBtn = document.getElementById("viewMoreBtn");
     const moreText = document.getElementById("moreText");
 
-    // Initially hide the "Read More" content
+    
     moreText.style.display = "none";
 
-    // Toggle the visibility of the content when the button is clicked
+    
     viewMoreBtn.addEventListener("click", function () {
         if (moreText.style.display === "none") {
-            moreText.style.display = "block"; // Show the content
-            viewMoreBtn.textContent = "- Read Less"; // Change button text
+            moreText.style.display = "block"; 
+            viewMoreBtn.textContent = "- Read Less"; 
         } else {
-            moreText.style.display = "none"; // Hide the content
-            viewMoreBtn.textContent = "+ Read More"; // Reset button text
+            moreText.style.display = "none"; 
+            viewMoreBtn.textContent = "+ Read More";
         }
     });
 });
 
 
-// JSON random data edit,delete
+// JSON RANDOM DATA EDIT DELETE
 
 document.addEventListener("DOMContentLoaded", function () {
     const entitiesTable = document.getElementById("entities-table").getElementsByTagName('tbody')[0];
     const messageDiv = document.getElementById("message");
 
-    // Assuming this data comes from a JSON file
+    
     let entities = [
         { "id": 1, "name": "Nadža Hasanovć", "email": "nadza@gmail.com" },
         { "id": 2, "name": "Angelina Jolie", "email": "angelina@gmail.com" },
         { "id": 3, "name": "Vin Diesel", "email": "vin@gmail.com" }
     ];
 
-    // Simulate fetching data from JSON
-    // Normally you'd fetch this from a file, but we're directly assigning it for this case.
-
-    // Load the entities into the table
+    
     loadEntities(entities);
 
-    // Function to display entities in the table
+    
     function loadEntities(entities) {
-        entitiesTable.innerHTML = ""; // Clear the table
+        entitiesTable.innerHTML = ""; 
         entities.forEach(entity => {
             const row = document.createElement("tr");
             row.innerHTML = `
@@ -393,7 +390,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Edit function: Simulate editing an entity
+    
     window.editEntity = function (id) {
         const entity = entities.find(e => e.id === id);
         if (!entity) return;
@@ -405,7 +402,7 @@ document.addEventListener("DOMContentLoaded", function () {
             entity.name = newName;
             entity.email = newEmail;
 
-            // Reload the table to reflect changes
+            
             loadEntities(entities);
             showMessage("Entity updated successfully.", "success");
         } else {
@@ -413,15 +410,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Delete function: Simulate deleting an entity
+    
     window.deleteEntity = function (id) {
         const entityIndex = entities.findIndex(e => e.id === id);
 
         if (entityIndex !== -1) {
-            // Remove the entity from the array
+            
             entities.splice(entityIndex, 1);
 
-            // Reload the table to reflect the deletion
+            
             loadEntities(entities);
             showMessage("Entity deleted successfully.", "success");
         } else {
@@ -429,13 +426,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Show success or error message
+    
     function showMessage(message, type) {
         messageDiv.textContent = message;
         messageDiv.className = `message ${type}`;
         messageDiv.style.display = "block";
 
-        // Hide the message after 3 seconds
+        
         setTimeout(() => {
             messageDiv.style.display = "none";
         }, 3000);
