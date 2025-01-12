@@ -1,0 +1,153 @@
+/* Global Styles */
+body, html {
+    background-color: #FFE6F2;  /* Soft pinkish background */
+    font-family: Arial, sans-serif;  /* Clean font */
+}
+
+header {
+    background: #F8BBD0;  /* Light pink */
+    padding: 20px 30px;
+    max-width: 940px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul li a {
+    background: #F1C6D9;  /* Light pinkish background for nav links */
+    padding: 8px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #D81B60;  /* Deep pink for text */
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #F8BBD0;  /* Hover effect to light pink */
+    color: #880E4F;  /* Darker pink on hover */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+#pageContent {
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+}
+
+main {
+    float: left;
+    width: 60%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    background: #F8BBD0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+article {
+    border-bottom: 2px dotted #E91E63;  /* Pinkish dotted line */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-weight: normal;
+    margin-bottom: 12px;
+    color: #D81B60;  /* Deep pink for article headings */
+}
+
+article p {
+    color: #4A148C;  /* Slightly darker pink for paragraph text */
+}
+
+main section {
+    background: #F1C6D9;  /* Light pink background for sections */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+footer {
+    background: #F8BBD0;  /* Light pink footer */
+    max-width: 1000px;
+    margin: auto;
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer p {
+    padding: 10px;
+    font-size: 14px;
+    color: #880E4F;  /* Darker pink text */
+}
+
+address {
+    padding: 10px 20px 30px 10px;
+    background: #F1C6D9;  /* Pinkish background for address */
+    border-radius: 10px;
+}
+
+aside > div {
+    margin: 10px auto;
+    background: #F1C6D9;  /* Pink background for aside sections */
+    min-height: 100px;
+    border-radius: 10px;
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    margin-right: 75px;
+    color: #880E4F;  /* Darker pink for the logo */
+}
+
+#logo img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+body > section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0px;
+    border-bottom: 1px solid #E91E63;  /* Pink border */
+    color: #333;
+}
+
+@media screen and (max-width: 1000px) {
+    body > section {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+    }
+}
