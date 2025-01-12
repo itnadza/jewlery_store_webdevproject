@@ -6,19 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurorix Jewelry Store</title>
     <meta name="description" content="Aurorix Jewelry Store SPA layout using SPAPP.">
-
-    <!-- CSS Links -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/spapp.css">
-
-    <!-- JS Libraries -->
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/jquery.spapp.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </head>
 
 <body>
-    <!-- Header / Navigation -->
+   
     <header>
         <nav role="navigation">
             <ul>
@@ -29,7 +25,7 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
+    
     <section id="pageContent">
         <h1>Welcome to Aurorix Jewelry</h1>
         <p>At Aurorix Jewelry, we believe in elegance, craftsmanship, and timeless beauty. Our jewelry pieces are designed to make you feel special, with each piece handpicked and crafted to perfection. Whether you're looking for something to celebrate a momentous occasion or simply want to add a touch of elegance to your everyday look, we offer a variety of options that suit all tastes and budgets.</p>
@@ -68,22 +64,21 @@
         </main>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2025 Aurorix Jewelry Store | Designed with love</p>
+        <p>2025 Aurorix Jewelry Store | Nadža Hasanović</p>
         <p>Follow us on social media: <a href="https://facebook.com">Facebook</a> | <a href="https://instagram.com">Instagram</a> | <a href="https://twitter.com">Twitter</a></p>
     </footer>
 
     <script>
         var app = $.spapp({
-            defaultView: "#about_us", // Set default view to 'About Us'
-            templateDir: "./views"   // Directory where HTML files are stored
+            defaultView: "#about_us", 
+            templateDir: "./views"   
         });
 
-        // Define routes for each page
+        
         app.route({
             view: "about_us",
-            load: "about_us.html", // Path to the 'about_us.html' view
+            load: "about_us.html", 
             onCreate: function () {
                 console.log("About Us page created!");
             },
@@ -94,7 +89,7 @@
 
         app.route({
             view: "our_collection",
-            load: "our_collection.html", // Path to the 'our_collection.html' view
+            load: "our_collection.html", 
             onCreate: function () {
                 console.log("Our Collection page created!");
             },
@@ -105,7 +100,7 @@
 
         app.route({
             view: "contact_us",
-            load: "contact_us.html", // Path to the 'contact_us.html' view
+            load: "contact_us.html", 
             onCreate: function () {
                 console.log("Contact Us page created!");
             },
